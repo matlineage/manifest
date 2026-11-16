@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="johanneszab" fetch="https://github.com/johanneszab" />
+
+  <project path="device/sony/pdx246" name="android_device_sony_pdx246"
+           remote="johanneszab" revision="lineage-24.0" />
+  <project path="kernel/sony/sm6450" name="android_kernel_sony_sm6450"
+           remote="johanneszab" revision="pdx246" />
+  <project path="kernel/sony/sm6450-modules" name="android_kernel_sony_sm6450-modules"
+           remote="johanneszab" revision="lineage-24.0" />
+  <project path="kernel/sony/sm6450-devicetrees" name="android_kernel_sony_sm6450-devicetrees"
+           remote="johanneszab" revision="lineage-24.0" />
+
+  <project path="hardware/sony" name="LineageOS/android_hardware_sony"
+           remote="github" />
+</manifest>
