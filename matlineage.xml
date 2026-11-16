@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="personal"
+            fetch="https://github.com/matlineage" />
+
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <project name="android_frameworks_base"
+             path="frameworks/base"
+             remote="personal"
+             revision="lineage-24.0" />
+
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <project name="android_packages_apps_Settings"
+             path="packages/apps/Settings"
+             remote="personal"
+             revision="lineage-24.0" />
+
+    <remove-project name="LineageOS/android_packages_apps_Launcher3" />
+    <project name="android_packages_apps_Launcher3"
+             path="packages/apps/Launcher3"
+             remote="personal"
+             revision="lineage-24.0" />
+
+    <remove-project name="LineageOS/android_packages_apps_LineageParts" />
+    <project name="android_packages_apps_LineageParts"
+             path="packages/apps/LineageParts"
+             remote="personal"
+             revision="lineage-24.0" />
+
+    <remove-project name="LineageOS/android_packages_modules_Permission" />
+    <project name="android_packages_modules_Permission"
+             path="packages/modules/Permission"
+             remote="personal"
+             revision="lineage-24.0" />
+
+</manifest>
