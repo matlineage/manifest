@@ -8,3 +8,5 @@ features/changes:
 - don't harass the user with "discover trust"
 
 snapshots/initial.xml has output of `repo manifest -r -o initial.xml` to perhaps help diagnose build issues in future
+
+to push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo)
