@@ -2,7 +2,7 @@
 <manifest>
 
     <remote name="personal"
-            fetch="https://github.com/matlineage" />
+            fetch="ssh://git@github.com/matlineage" />
 
     <remove-project name="LineageOS/android_frameworks_base" />
     <project name="android_frameworks_base"
