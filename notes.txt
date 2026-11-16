@@ -1,0 +1,8 @@
+features/changes:
+- disable "Managed if unused"
+- spectrum visualizer on navigation bar and lock screen
+- transient task mode aka tadimode
+- colored statusbar notification icons
+- remove "app continuity" nonsense in application info
+- clear all button on recents screen (instead of screenshot)
+- don't harass the user with "discover trust"
