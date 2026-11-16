@@ -6,3 +6,5 @@ features/changes:
 - remove "app continuity" nonsense in application info
 - clear all button on recents screen (instead of screenshot)
 - don't harass the user with "discover trust"
+
+snapshots/initial.xml has output of `repo manifest -r -o initial.xml` to perhaps help diagnose build issues in future
