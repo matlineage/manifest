@@ -34,4 +34,10 @@
              remote="personal"
              revision="lineage-24.0" />
 
+    <remove-project name="LineageOS/android_lineage-sdk" />
+    <project name="android_lineage-sdk"
+             path="lineage-sdk"
+             remote="personal"
+             revision="lineage-24.0" />
+
 </manifest>
