@@ -46,4 +46,10 @@
              remote="personal"
              revision="lineage-24.0" />
 
+    <remove-project name="LineageOS/android_system_core" />
+    <project name="android_system_core"
+             path="system/core"
+             remote="personal"
+             revision="lineage-24.0" />
+
 </manifest>
