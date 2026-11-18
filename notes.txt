@@ -8,6 +8,7 @@ features/changes:
 - don't harass the user with "discover trust"
 - ask less unnecessary questions in setup wizard
 - disable "recommended volume level" warning/nagging
+- changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry
 
 snapshots/initial.xml has output of `repo manifest -r -o initial.xml` to perhaps help diagnose build issues in future
 
