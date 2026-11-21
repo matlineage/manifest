@@ -1,15 +1,40 @@
 features/changes:
-- disable "Managed if unused"
 - spectrum visualizer on navigation bar and lock screen
-- transient task mode aka tadimode
 - colored statusbar notification icons
-- remove "app continuity" nonsense in application info
+- transient task mode aka tadimode
 - clear all button on recents screen (instead of screenshot)
+- disable "Managed if unused"
+- remove "app continuity" nonsense in application info
 - don't harass the user with "discover trust"
 - ask less unnecessary questions in setup wizard
 - disable "recommended volume level" warning/nagging
 - changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry
 
-snapshots/initial.xml has output of `repo manifest -r -o initial.xml` to perhaps help diagnose build issues in future
+FUTURE PLANS / GOALS:
+- faster unlock (on phones i own, apparently it's quite device specific)
+- nice font (or perhaps just font selection thing)
+- extra timezones on lock screen clock, maybe weather too, some way
+- advanced reboot on lockscreen option
 
-to push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo)
+- settings page with options for:
+* spectrum on/off (separate options for lockscreen and for statusbar)
+* spectrum width (less than 20kHz to look nicer)
+* color statusbar icons
+* font
+* timezones on lockscreen?
+
+- default on for advanced restart
+- perhaps default off widgets on lock screen
+
+- default on battery percentage visible? ("inside the icon")
+- the harassment about summarizing notifications should go away
+- turn notification organizer off by default
+- default off battery manager
+- default off "enhanced notifications"
+- default off notification cooldown
+- default to "full list" notifications on lock screen
+- remove "explore hub mode" nag screen
+
+NOTES:
+	snapshots/initial.xml has output of `repo manifest -r -o initial.xml` to perhaps help diagnose build issues in future
+	to push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo)
