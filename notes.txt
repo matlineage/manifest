@@ -11,6 +11,8 @@ features/changes:
 - changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry
 
 FUTURE PLANS / GOALS:
+- write instructions for becomebuntu script, build
+
 - faster unlock (on phones i own, apparently it's quite device specific)
 - nice font (or perhaps just font selection thing)
 - extra timezones on lock screen clock, maybe weather too, some way
