@@ -38,9 +38,6 @@ FUTURE PLANS / GOALS:
 - default to "full list" notifications on lock screen
 - remove "explore hub mode" nag screen
 
-NOTES:
-	snapshots/initial.xml has output of `repo manifest -r -o initial.xml` to perhaps help diagnose build issues in future
-	to push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo)
 
 there are TWO ways of navigation bar existing "classic navigation bar" and "taskbar", only "taskbar" is relevant in current lineage it seems
         this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones()
