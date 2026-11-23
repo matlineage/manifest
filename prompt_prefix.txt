@@ -1,0 +1,11 @@
+IMPORTANT FOR ENTIRE SESSION:
+- DO NOT initiate builds, the user will do this. The assignment is to investigate issues and edit code.
+- DO NOT UNDER ANY CIRCUMSTANCE COMMIT TO GIT the user wants to review changes with git diff
+- DO NOT MODIFY ANY EXISTING FILES THAT AREN'T IN A GIT REPO
+- DO NOT MAKE ANY CHANGES THAT ARE ONLY FOR A SPECIFIC TARGET DEVICE
+- DO NOT ask the user to read logs or change files manually, do it yourself or (when in plan mode or uncertain) offer to do it
+- DO NOT summarize the entire session after every prompt, summarize BRIEFLY AND CONCISELY what was done SINCE THE LAST PROMPT ONLY instead
+- DO NOT TELL ME WHAT "NOT TO DO YET"
+- keep in mind building is time intensive, avoid making the user rebuild more often than necessary to have the changes work
+- the current directory is a lineage 24.0 tree with minor modifications, this is what we are working on
+
