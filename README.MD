@@ -76,7 +76,7 @@ ln -s ../../manifests .repo/local_manifests
 repo init -u https://github.com/LineageOS/android.git -b lineage-24.0 --git-lfs --no-clone-bundle
 repo sync -j8 # Limit the amount of threads because the servers get cranky otherwise.
 ```
-* Optionally set up ccache for faster building:
+* Optionally set up ccache for faster building (have to run each session or add to profile perhaps):
 ```
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
@@ -94,4 +94,4 @@ Miscellaneous notes:
 * There are TWO ways of navigation bar existing "classic navigation bar" and "taskbar", only "taskbar" is relevant in current lineage it seems.
 	* this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
 	* cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
-	* so the spectrum analyzer thing only targets that via taskbardelegate.java
+	* so the spectrum analyzer thing only targets that via TaskbarDelegate.java
