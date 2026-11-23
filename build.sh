@@ -1,15 +1,21 @@
 #!/bin/bash
 set -e
 
+# Error if no argument.
+if [[ $# -eq 0 ]] ; then
+	echo "usage: $0 <target_device>"
+	exit 0
+fi
+
 # Make sure to be in the right dir.
 root=$(realpath "$0") || exit 1
 root=$(dirname "$root") || exit 1
 root=$(realpath "$root") || exit 1
 cd $root"/lineage"
 
-mkdir -p out_sony
-ln -sfnT out_sony out
+mkdir -p "out_$1"
+ln -sfnT "out_$1" out # Yes, I know about OUT_DIR but it caused issues.
 . build/envsetup.sh
-lunch lineage_pdx246-cp2a-userdebug
+lunch "lineage_$1-cp2a-userdebug"
 source build-filter-vendors.sh
 m bacon

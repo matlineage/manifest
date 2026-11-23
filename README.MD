@@ -1,14 +1,14 @@
 What files here are:
-* README.MD - this file
-* preparechroot.sh - script to create user inside chroot
-* becomebuntu.sh - script to use a chroot but with current home dir bind-mounted
-* mchroot.c - custom chroot utility, used by becomebuntu.sh, preparechroot.sh
-* buildfortadi.sh, buildforsony.sh - scripts to build for my specific phones
-* build-filter-vendors.sh - used by buildfor*.sh to avoid issues by fighting the build system
-* prompt_prefix.txt - what i feed LLMs as a preamble in an attempt to make them behave a bit
-* snapshot.xml has output of `repo manifest -r -o snapshot.xml` to perhaps help diagnose build issues in future
+* README.MD - This file.
+* preparechroot.sh - Script to create user inside chroot.
+* becomebuntu.sh - Script to use a chroot but with current home dir bind-mounted.
+* mchroot.c - Custom chroot utility, used by becomebuntu.sh, preparechroot.sh.
+* build.sh - Script to build for a specified device, with separate out directory.
+* build-filter-vendors.sh - Used by build.sh to avoid issues by fighting the build system.
+* prompt_prefix.txt - What i feed LLMs as a preamble in an attempt to make them behave a bit.
+* snapshot.xml - Has output of `repo manifest -r -o snapshot.xml` to perhaps help diagnose build issues in future.
 
-Order of doing things:
+Order of doing things to get a build:
 * Check out this repo and cd to it.
 * Create ubuntu chroot in buildenv dir (optional I suppose):
 ```
@@ -45,15 +45,15 @@ export CCACHE_EXEC=/usr/bin/ccache
 ccache -M 50G
 ```
 * Propriatary files have to be taken some way, how that's done depends on the device port.
-    * For Sony pdx246: `./device/sony/pdx246/setup.sh /path/to/stock/dump`
-    * For TP1803: `cd device/nubia/TP1803 && ./extract-files.py` with the device connected (uses adb).
-* Actually build:
-	TODO make the build script generic and usable for multiple targets
-	TODO move the sandbox thing here and make it better
+	* For Sony pdx246: `./device/sony/pdx246/setup.sh /path/to/stock/dump`
+	* For TP1803: `cd device/nubia/TP1803 && ./extract-files.py` with the device connected (uses adb).
+* Actually build: `./build.sh <target_device>`
+	* The point of the script is to have separate output directories so incremental builds can be done for multiple devices without rebuilding too much.
+	* Alternatively just follow the instructions for your device.
 
 Miscellaneous notes:
 * To push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo).
 * There are TWO ways of navigation bar existing "classic navigation bar" and "taskbar", only "taskbar" is relevant in current lineage it seems.
-    * this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
-    * cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
-    * so the spectrum analyzer thing only targets that via taskbardelegate.java
+	* this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
+	* cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
+	* so the spectrum analyzer thing only targets that via taskbardelegate.java
