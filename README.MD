@@ -48,7 +48,12 @@ ccache -M 50G
     * For Sony pdx246: `./device/sony/pdx246/setup.sh /path/to/stock/dump`
     * For TP1803: `cd device/nubia/TP1803 && ./extract-files.py` with the device connected (uses adb).
 * Actually build:
-
+	TODO make the build script generic and usable for multiple targets
+	TODO move the sandbox thing here and make it better
 
 Miscellaneous notes:
 * To push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo).
+* There are TWO ways of navigation bar existing "classic navigation bar" and "taskbar", only "taskbar" is relevant in current lineage it seems.
+    * this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
+    * cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
+    * so the spectrum analyzer thing only targets that via taskbardelegate.java
