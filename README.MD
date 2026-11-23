@@ -45,10 +45,10 @@ export CCACHE_EXEC=/usr/bin/ccache
 ccache -M 50G
 ```
 * Propriatary files have to be taken some way, how that's done depends on the device port.
-- For Sony pdx246: `./device/sony/pdx246/setup.sh /path/to/stock/dump`
-- For TP1803: `cd device/nubia/TP1803 && ./extract-files.py` with the device connected (uses adb).
+** For Sony pdx246: `./device/sony/pdx246/setup.sh /path/to/stock/dump`
+** For TP1803: `cd device/nubia/TP1803 && ./extract-files.py` with the device connected (uses adb).
 * Actually build:
 
 
 * Miscellaneous notes:
-- To push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo).
+** To push anything on a fresh fetch, have to first get the repository ready with `repo start lineage-24.0 frameworks/base` (or other dir for other repo).
