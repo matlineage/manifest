@@ -70,3 +70,29 @@ for dir in "${candidates[@]}"; do
 
     echo "Excluding $dir"
 done
+
+# Exclude inactive device trees.
+for dir in device/*/*; do
+    [[ -d "$dir" ]] || continue
+
+    rest="${dir#device/}"
+    oem="${rest%%/*}"
+    device="${rest#*/}"
+
+    # Only consider device trees with a matching vendor tree.
+    [[ -d "vendor/$oem/$device" ]] || continue
+
+    is_active_namespace "$dir" && continue
+
+    marker="$dir/.find-ignore"
+
+    if [[ -e "$marker" ]]; then
+        echo "ERROR: Existing marker: $marker"
+        exit 1
+    fi
+
+    touch "$marker"
+    markers+=("$marker")
+
+    echo "Excluding $dir"
+done

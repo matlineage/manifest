@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+mkdir -p out_sony
 ln -sfnT out_sony out
 . build/envsetup.sh
 lunch lineage_pdx246-cp2a-userdebug
