@@ -7,4 +7,4 @@ targetpwd=$PWD
 cd "$root"
 user=$(whoami)
 uid=$(id -u)
-sudo sh -c "cp /etc/resolv.conf buildenv/etc/resolv.conf; ./mchroot buildenv /bin/sh -c 'set -e; useradd -u $uid -g 0 -s /bin/bash $user'"
+sudo sh -c "touch buildenv/etc/resolv.conf && chown $user buildenv/etc/resolv.conf && ./mchroot -r buildenv /bin/sh -c 'set -e; useradd -u $uid -g 0 -s /bin/bash $user'"

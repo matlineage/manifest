@@ -5,6 +5,6 @@ root=$(dirname "$root") || exit 1
 root=$(realpath "$root") || exit 1
 targetpwd=$PWD
 cd "$root"
-# buildenv dir should contain a chroot with a user of the same UID and username as current
+# buildenv dir should contain a chroot with a user of the same UID as current
 user=$(whoami)
-sudo sh -c "cp /etc/resolv.conf buildenv/etc/resolv.conf; ./mchroot -P /home -P /tmp buildenv /bin/sh -c 'cd $targetpwd; exec runuser $user'"
+./mchroot -P /home -P /tmp -p /etc/resolv.conf -r buildenv -n /bin/bash
