@@ -40,7 +40,7 @@ Future plans / Goals:
 
 What files here are:
 * README.MD - This file.
-* preparechroot.sh - Script to create user inside chroot.
+* preparechroot.sh - Script to create user inside chroot (run as the user you intend to use for building, will sudo).
 * becomebuntu.sh - Script to use a chroot but with current home dir bind-mounted.
 * mchroot.c - Custom chroot utility, used by becomebuntu.sh, preparechroot.sh.
 * build.sh - Script to build for a specified device, with separate out directory.
