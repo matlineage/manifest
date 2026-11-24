@@ -11,7 +11,7 @@ fi
 root=$(realpath "$0") || exit 1
 root=$(dirname "$root") || exit 1
 root=$(realpath "$root") || exit 1
-cd $root"/lineage"
+cd "$root/lineage"
 
 mkdir -p "out_$1"
 ln -sfnT "out_$1" out # Yes, I know about OUT_DIR but it caused issues.
