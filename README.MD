@@ -1,14 +1,16 @@
 Features / Changes (from LineageOS):
-* spectrum visualizer on navigation bar and lock screen
-* colored statusbar notification icons
-* transient task mode aka tadimode
-* clear all button on recents screen (instead of screenshot)
-* disable "Managed if unused"
-* remove "app continuity" nonsense in application info
-* don't harass the user with "discover trust"
-* ask less unnecessary questions in setup wizard
-* disable "recommended volume level" warning/nagging
-* changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry
+* Spectrum visualizer on navigation bar and lock screen. (frameworks/base)
+* Colored statusbar notification icons (stolen from crDroid). (frameworks/base)
+* Transient task mode aka tadimode (remove apps from recents when pressing back to exit them). (frameworks/base)
+	* Stolen from LMO (https://gerrit.libremobileos.com/c/LMODroid/platform_frameworks_base/+/23084)
+* Clear all button on recents screen (instead of screenshot). (packages/apps/Launcher3)
+* Disable "Managed if unused" from application info. (frameworks/base, packages/apps/Settings, packages/modules/Permission)
+	* It is in 2 commits, the second part also disables it being enabled at run-time in case of dirty-flashing or whatever.
+* Remove "App Continuity" nonsense in application info. (packages/apps/Settings)
+* Don't harass the user with "Discover trust" (notification on first boot). (lineage-sdk, packages/apps/LineageParts)
+* Ask less unnecessary questions in setup wizard. (packages/apps/SetupWizard)
+* Disable "Recommended volume level" warning/nagging. (frameworks/base)
+* Changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry.
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
