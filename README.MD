@@ -11,6 +11,8 @@ Features / Changes (from LineageOS):
 * Ask less unnecessary questions in setup wizard. (packages/apps/SetupWizard)
 * Disable "Recommended volume level" warning/nagging. (frameworks/base)
 * Changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry.
+* Disabled by default: "Enhanced notifications", "Notification cooldown"
+* Default to "Full list" notifications on lock screen.
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
@@ -33,9 +35,7 @@ Future plans / Goals:
 * the harassment about summarizing notifications should go away
 * turn notification organizer off by default
 * default off battery manager
-* default off "enhanced notifications"
-* default off notification cooldown
-* default to "full list" notifications on lock screen
+
 * remove "explore hub mode" nag screen
 
 What files here are:
