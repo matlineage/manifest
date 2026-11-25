@@ -13,6 +13,10 @@ Features / Changes (from LineageOS):
 * Changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry.
 * Disabled by default: "Enhanced notifications", "Notification cooldown"
 * Default to "Full list" notifications on lock screen.
+* Show battery percentage inside icon by default.
+* Turn off "Battery Manager" by default.
+* Turn off "Notification organiser" by default.
+* Hide "Battery Manager", "Notification summaries" and "Notification organiser" from settings (they're useless/defunct anyway).
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
@@ -27,14 +31,13 @@ Future plans / Goals:
 	* font
 	* timezones on lockscreen?
 
+* is battery manager dead code? is enhanced notifications?
+
 * default on for advanced restart
 * perhaps default off widgets on lock screen
 * less transparant spectrum, or configurable transparency level
 
-* default on battery percentage visible? ("inside the icon")
 * the harassment about summarizing notifications should go away
-* turn notification organizer off by default
-* default off battery manager
 
 * remove "explore hub mode" nag screen
 
