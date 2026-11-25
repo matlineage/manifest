@@ -17,6 +17,7 @@ Features / Changes (from LineageOS):
 * Turn off "Battery Manager" by default.
 * Turn off "Notification organiser" by default.
 * Hide "Battery Manager", "Notification summaries" and "Notification organiser" from settings (they're useless/defunct anyway).
+* Disable "Notification summaries" and "Notification organiser" onboarding nagging in notification tray.
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
@@ -34,8 +35,6 @@ Future plans / Goals:
 * default on for advanced restart
 * perhaps default off widgets on lock screen
 * less transparant spectrum, or configurable transparency level
-
-* the harassment about summarizing notifications should go away
 
 * remove "explore hub mode" nag screen
 
