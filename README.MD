@@ -31,8 +31,6 @@ Future plans / Goals:
 	* font
 	* timezones on lockscreen?
 
-* is battery manager dead code? is enhanced notifications?
-
 * default on for advanced restart
 * perhaps default off widgets on lock screen
 * less transparant spectrum, or configurable transparency level
