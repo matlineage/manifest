@@ -22,6 +22,7 @@ Features / Changes (from LineageOS):
 * Turned off "Widgets on lock screen" by default.
 * Turned on "Advanced restart" by default.
 * Advanced restart on lockscreen (optional, default on).
+* Disabled the first-boot home hotseat discovery bounce in Launcher3 (icons bouncing on first boot).
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
@@ -35,6 +36,7 @@ Future plans / Goals:
 	* color statusbar icons
 	* font
 	* timezones on lockscreen?
+	* should "advanced restart on lock screen" move there? perhaps have some settings in two places if can
 
 What files here are:
 * README.MD - This file.
