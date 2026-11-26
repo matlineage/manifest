@@ -43,7 +43,8 @@ Future plans / Goals:
 * notification count with statusbar icons
 * full granularity statusbar icons
 * GSI build
-* update snapshot xml
+* multiple instances of apps somehow?
+* steal lmo glide keyboard?
 
 What files here are:
 * README.MD - This file.
@@ -54,6 +55,9 @@ What files here are:
 * build-filter-vendors.sh - Used by build.sh to avoid issues by fighting the build system.
 * prompt_prefix.txt - What i feed LLMs as a preamble in an attempt to make them behave a bit.
 * snapshot.xml - Has output of `repo manifest -r -o snapshot.xml` to perhaps help diagnose build issues in future.
+
+* default is not same as lineage, fix that
+* add the setting to mat extras
 
 Order of doing things to get a build:
 * Check out this repo and cd to it.

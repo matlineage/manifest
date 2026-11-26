@@ -17,5 +17,5 @@ mkdir -p "out_$1"
 ln -sfnT "out_$1" out # Yes, I know about OUT_DIR but it caused issues.
 . build/envsetup.sh
 lunch "lineage_$1-cp2a-userdebug"
-source build-filter-vendors.sh
+source "$root/build-filter-vendors.sh"
 m bacon
