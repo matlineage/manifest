@@ -27,6 +27,7 @@ Features / Changes (from LineageOS):
 	* Spectrum on/off (statusbar + lockscreen).
 	* Spectrum width (frequency).
 	* Lock screen spectrum height.
+	* Use mic input for spectrum.
 	* Color statusbar icons on/off. (also in normal settings -> system -> status bar)
 	* Advanced restart on lockscreen (also in normal settings -> system -> buttons -> power menu).
 
@@ -34,14 +35,15 @@ Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
 * nice font (or perhaps just font selection thing)
 * extra timezones on lock screen clock, maybe weather too, some way
-* optional spectrum with mic?
-
 * settings page with options for:
 	* font
 	* timezones on lockscreen?
-
-* rename?
-* bootanim? boot splash image?
+* show clock 
+* show seconds on clocks by default?
+* notification count with statusbar icons
+* full granularity statusbar icons
+* GSI build
+* update snapshot xml
 
 What files here are:
 * README.MD - This file.
@@ -102,3 +104,6 @@ Miscellaneous notes:
 	* this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
 	* cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
 	* so the spectrum analyzer thing only targets that via TaskbarDelegate.java
+
+Credit:
+	Many thanks to LineageOS, LMODroid, crDroid and InfinityX projects, for the code and inspiration used.
