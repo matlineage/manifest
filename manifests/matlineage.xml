@@ -58,4 +58,10 @@
              remote="personal"
              revision="lineage-24.0" />
 
+    <remove-project name="LineageOS/android_vendor_lineage" />
+    <project name="android_vendor_lineage"
+             path="vendor/lineage"
+             remote="personal"
+             revision="lineage-24.0" />
+
 </manifest>

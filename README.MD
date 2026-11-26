@@ -13,30 +13,28 @@ Features / Changes (from LineageOS):
 * Changed defaults to enable developer options, usb debugging and rooted debugging and disable ADB authorization expiry.
 * Disabled by default: "Enhanced notifications", "Notification cooldown"
 * Default to "Full list" notifications on lock screen.
-* Show battery percentage inside icon by default.
-* Turn off "Battery Manager" by default.
-* Turn off "Notification organiser" by default.
-* Hide "Battery Manager", "Notification summaries" and "Notification organiser" from settings (they're useless/defunct anyway).
-* Disable "Notification summaries" and "Notification organiser" onboarding nagging in notification tray.
+* Set show battery percentage inside icon by default.
+* Turned off "Battery Manager" by default.
+* Turned off "Notification organiser" by default.
+* Hid "Battery Manager", "Notification summaries" and "Notification organiser" from settings (they're useless/defunct anyway).
+* Disabled "Notification summaries" and "Notification organiser" onboarding nagging in notification tray.
+* Disabled "Explore hub mode" nag screen (when going to widgets pane on lock screen).
+* Turned off "Widgets on lock screen" by default.
+* Turned on "Advanced restart" by default.
+* Advanced restart on lockscreen (optional, default on).
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
 * nice font (or perhaps just font selection thing)
 * extra timezones on lock screen clock, maybe weather too, some way
-* advanced reboot on lockscreen option
 
 * settings page with options for:
 	* spectrum on/off (separate options for lockscreen and for statusbar)
 	* spectrum width (less than 20kHz to look nicer)
+	* spectrum alpha level?
 	* color statusbar icons
 	* font
 	* timezones on lockscreen?
-
-* default on for advanced restart
-* perhaps default off widgets on lock screen
-* less transparant spectrum, or configurable transparency level
-
-* remove "explore hub mode" nag screen
 
 What files here are:
 * README.MD - This file.
