@@ -23,20 +23,25 @@ Features / Changes (from LineageOS):
 * Turned on "Advanced restart" by default.
 * Advanced restart on lockscreen (optional, default on).
 * Disabled the first-boot home hotseat discovery bounce in Launcher3 (icons bouncing on first boot).
+* Mat extras settings page:
+	* Spectrum on/off (statusbar + lockscreen).
+	* Spectrum width (frequency).
+	* Lock screen spectrum height.
+	* Color statusbar icons on/off.
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
 * nice font (or perhaps just font selection thing)
 * extra timezones on lock screen clock, maybe weather too, some way
+* optional spectrum with mic?
+* add the mat extra settings also to relevant pages in normal settings
 
 * settings page with options for:
-	* spectrum on/off (separate options for lockscreen and for statusbar)
-	* spectrum width (less than 20kHz to look nicer)
-	* spectrum alpha level?
-	* color statusbar icons
 	* font
 	* timezones on lockscreen?
-	* should "advanced restart on lock screen" move there? perhaps have some settings in two places if can
+
+* rename?
+* bootanim? boot splash image?
 
 What files here are:
 * README.MD - This file.
