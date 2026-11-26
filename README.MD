@@ -27,14 +27,14 @@ Features / Changes (from LineageOS):
 	* Spectrum on/off (statusbar + lockscreen).
 	* Spectrum width (frequency).
 	* Lock screen spectrum height.
-	* Color statusbar icons on/off.
+	* Color statusbar icons on/off. (also in normal settings -> system -> status bar)
+	* Advanced restart on lockscreen (also in normal settings -> system -> buttons -> power menu).
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
 * nice font (or perhaps just font selection thing)
 * extra timezones on lock screen clock, maybe weather too, some way
 * optional spectrum with mic?
-* add the mat extra settings also to relevant pages in normal settings
 
 * settings page with options for:
 	* font
