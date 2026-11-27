@@ -7,4 +7,4 @@ targetpwd=$PWD
 cd "$root"
 # buildenv dir should contain a chroot with a user of the same UID as current
 uid=$(id -u)
-./mchroot -P /home -P /tmp -p /etc/resolv.conf -r buildenv -u "$uid:0" -c "$targetpwd" /bin/bash
+./mchroot -P /home -P /tmp -P /sys -p /etc/resolv.conf -r buildenv -u "$uid:0" -c "$targetpwd" /bin/bash
