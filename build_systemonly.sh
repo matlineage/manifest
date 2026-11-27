@@ -4,7 +4,7 @@ set -e
 # Error if no argument.
 if [[ $# -eq 0 ]] ; then
 	echo "usage: $0 <target_device>"
-	exit 0
+	exit 1
 fi
 
 # Make sure to be in the right dir.

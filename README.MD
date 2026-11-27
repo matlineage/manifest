@@ -108,6 +108,7 @@ Miscellaneous notes:
 	* this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
 	* cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
 	* so the spectrum analyzer thing only targets that via TaskbarDelegate.java
+* For debugging perhaps useful: `../build_systemonly.sh TP1803 && adb reboot fastboot && fastboot flash system out/target/product/TP1803/system.img && fastboot flash system_ext out/target/product/TP1803/system_ext.img && fastboot reboot`
 
 Credit:
 	Many thanks to LineageOS, LMODroid, crDroid and InfinityX projects, for the code and inspiration used.
