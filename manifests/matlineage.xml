@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <remote name="personal"
-            fetch="ssh://git@github.com/matlineage" />
+    <remote name="personal" fetch="ssh://git@github.com/matlineage" />
+    <remote name="lmodroid" fetch="https://github.com/" />
 
     <remove-project name="LineageOS/android_frameworks_base" />
     <project name="android_frameworks_base"
@@ -75,5 +75,14 @@
              path="vendor/lineage"
              remote="personal"
              revision="lineage-24.0" />
+
+    <!-- Remove LineageOS LatinIME -->
+    <remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
+    <!-- Use LMODroid LatinIME -->
+    <project
+        name="LMODroid/platform_packages_inputmethods_LatinIME"
+        path="packages/inputmethods/LatinIME"
+        remote="lmodroid"
+        revision="seventeen-qpr0" />
 
 </manifest>

@@ -20,3 +20,4 @@ lunch "lineage_$1-cp2a-userdebug"
 source "$root/build-filter-vendors.sh"
 m systemimage
 m systemextimage
+m productimage

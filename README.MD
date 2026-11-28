@@ -21,30 +21,27 @@ Features / Changes (from LineageOS):
 * Disabled "Explore hub mode" nag screen (when going to widgets pane on lock screen).
 * Turned off "Widgets on lock screen" by default.
 * Turned on "Advanced restart" by default.
-* Advanced restart on lockscreen (optional, default on).
+* Advanced restart on lockscreen.
 * Disabled the first-boot home hotseat discovery bounce in Launcher3 (icons bouncing on first boot).
+(TEST) * Default to small clock on lock screen even when no notifications are shown (display-> lock screen -> dynamic clock).
+(TEST) * Full granularity statusbar icons for wifi/signal level.
+(TEST) * LMODroid's default keyboard which has swipe.
 * Mat extras settings page:
 	* Spectrum on/off (statusbar + lockscreen).
 	* Spectrum width (frequency).
 	* Lock screen spectrum height.
 	* Use mic input for spectrum.
 	* Color statusbar icons on/off. (also in normal settings -> system -> status bar)
-	* Advanced restart on lockscreen (also in normal settings -> system -> buttons -> power menu).
+	* Font selection (also in settings -> wallpaper and style, then swipe to home screen).
 
 Future plans / Goals:
 * faster unlock (on phones i own, apparently it's quite device specific)
-* nice font (or perhaps just font selection thing)
 * extra timezones on lock screen clock, maybe weather too, some way
 * settings page with options for:
-	* font
 	* timezones on lockscreen?
-* show clock 
 * show seconds on clocks by default?
 * notification count with statusbar icons
-* full granularity statusbar icons
-* GSI build
-* multiple instances of apps somehow?
-* steal lmo glide keyboard?
+* GSI build (allegedly just gsi_arm64 target)
 
 What files here are:
 * README.MD - This file.
@@ -55,9 +52,6 @@ What files here are:
 * build-filter-vendors.sh - Used by build.sh to avoid issues by fighting the build system.
 * prompt_prefix.txt - What i feed LLMs as a preamble in an attempt to make them behave a bit.
 * snapshot.xml - Has output of `repo manifest -r -o snapshot.xml` to perhaps help diagnose build issues in future.
-
-* default is not same as lineage, fix that
-* add the setting to mat extras
 
 Order of doing things to get a build:
 * Check out this repo and cd to it.
@@ -108,7 +102,7 @@ Miscellaneous notes:
 	* this is set in AOSP default release configuration -> enable_taskbar_on_phones -> enableTaskbarOnPhones() (platform/build/release repository)
 	* cp2a (android 17) inherits it from cp1a <- bp4a <- bp3a <- bp2a <- bp1a <- enable_taskbar_on_phones
 	* so the spectrum analyzer thing only targets that via TaskbarDelegate.java
-* For debugging perhaps useful: `../build_systemonly.sh TP1803 && adb reboot fastboot && fastboot flash system out/target/product/TP1803/system.img && fastboot flash system_ext out/target/product/TP1803/system_ext.img && fastboot reboot`
+* For debugging perhaps useful: `../build_systemonly.sh TP1803 && adb reboot fastboot && fastboot flash system out/target/product/TP1803/system.img && fastboot flash system_ext out/target/product/TP1803/system_ext.img && fastboot flash product out/target/product/TP1803/product.img && fastboot reboot`
 
 Credit:
 	Many thanks to LineageOS, LMODroid, crDroid and InfinityX projects, for the code and inspiration used.
